@@ -1,0 +1,36 @@
+---
+title: "Maternal hypertension and birth weight"
+format: html
+---
+
+<!-- Task 6 · Report. Lessons to revisit: Module 2, lessons 5 and 6.
+     Render with the Render button in RStudio, or quarto render report.qmd.
+     Take every number from the results/ files or the models with inline code,
+     for example `r round(desc$mean[2])`, never type it by hand. -->
+
+```{r setup, include = FALSE}
+source("scripts/01_clean.R")
+# TODO: read the results files you need, for example
+# desc <- read.csv("results/bwt_by_ht.csv")
+```
+
+## Methods
+
+TODO: data (MASS::birthwt, n = ...), the tests and models you used, and why
+(for example why Fisher's test suits these counts).
+
+## Results
+
+TODO: each comparison as size of difference, 95% confidence interval, then p-value.
+Include the adjusted effect and the sample size needed for a 300 g difference.
+
+TODO: include one figure, for example results/bwt_by_ht.png.
+
+## Limitations
+
+TODO: what can these data not tell you? Think about who was studied, when and where,
+how many, and whether the design can show cause.
+
+```{r}
+sessionInfo()
+```
